@@ -5,7 +5,7 @@ import starIcon from "../images/icon-star.svg";
 import { useState } from "react";
 
 const Rating = ({ rating, setRating, setShowThankYouPage }) => {
-  const [aciveRatings, setActiveRatings] = useState({
+  const [activeRatings, setActiveRatings] = useState({
     oneStar: false,
     twoStar: false,
     threeStar: false,
@@ -30,7 +30,7 @@ const Rating = ({ rating, setRating, setShowThankYouPage }) => {
       <div className="rating">
         <div
           className={
-            aciveRatings.oneStar
+            activeRatings.oneStar
               ? "rating_container active"
               : "rating_container"
           }
@@ -49,7 +49,7 @@ const Rating = ({ rating, setRating, setShowThankYouPage }) => {
         </div>
         <div
           className={
-            aciveRatings.twoStar
+            activeRatings.twoStar
               ? "rating_container active"
               : "rating_container"
           }
@@ -68,7 +68,7 @@ const Rating = ({ rating, setRating, setShowThankYouPage }) => {
         </div>
         <div
           className={
-            aciveRatings.threeStar
+            activeRatings.threeStar
               ? "rating_container active"
               : "rating_container"
           }
@@ -87,7 +87,7 @@ const Rating = ({ rating, setRating, setShowThankYouPage }) => {
         </div>
         <div
           className={
-            aciveRatings.fourStar
+            activeRatings.fourStar
               ? "rating_container active"
               : "rating_container"
           }
@@ -106,7 +106,7 @@ const Rating = ({ rating, setRating, setShowThankYouPage }) => {
         </div>
         <div
           className={
-            aciveRatings.fiveStar
+            activeRatings.fiveStar
               ? "rating_container active"
               : "rating_container"
           }
